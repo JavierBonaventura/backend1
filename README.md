@@ -1,3 +1,3 @@
-# Curso Coder House Backend
-## Ebtregable 1
+# Curso CoderHouse Backend
+## Entregable 1
 ### Clases y contrtuctores
