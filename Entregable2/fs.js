@@ -91,7 +91,7 @@ const contenedor = new Contenedor("productos");
 // contenedor.save(productos);
 
 // Pide el resultado de un unico objeto con id "1"
-contenedor.getById(1);
+// contenedor.getById(1);
 
 // Devuelve todo el contenido del archivo "productos.txt"
 // contenedor.getAll();
@@ -102,13 +102,13 @@ contenedor.getById(1);
 // Borra todo el contenido del archivo
 // contenedor.deleteAll();
 
-// Variable con un prducto nuevo de ejemplo
-// const productoCreado = {
-//   title: "Bicicleta",
-//   price: 123.45,
-//   thumbnail:
-//     "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png",
-// };
-// Crea un nuevo producto en el arreglo
-// contenedor.saveNew(productoCreado);
+//Variable con un prducto nuevo de ejemplo
+const productoCreado = {
+  title: "Bicicleta",
+  price: 123.45,
+  thumbnail:
+    "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png",
+};
+//Crea un nuevo producto en el arreglo
+contenedor.saveNew(productoCreado);
 
