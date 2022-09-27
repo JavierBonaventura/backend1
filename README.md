@@ -18,6 +18,8 @@
 ## Entregable 5 -> server.js
 ### PLANTILLAS PUG, HANDLEBARS Y EJS
 
+## Entregable 6 -> server.js
+### WEBSOCKETS, HANDLEBARS, CHAT
 
 
 
