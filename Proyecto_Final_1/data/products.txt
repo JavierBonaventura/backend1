@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "timestamp": "10/08/2022 3:14:10 PM",
+    "nombre": "Mesa",
+    "precio": 345.67,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/globe-earth-geograhy-planet-school-256.png",
+    "codigo": "aa234"
+  },
+  {
+    "nombre": "Calculadora",
+    "timestamp": "10/08/2022 3:14:10 PM",
+    "precio": 234.56,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/calculator-math-tool-school-256.png",
+    "codigo": "aa234",
+    "id": 2
+  },
+  {
+    "id": 3,
+    "timestamp": "10/08/2022 3:52:45 PM",
+    "nombre": "Mesa",
+    "codigo": "aa234",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/globe-earth-geograhy-planet-school-256.png",
+    "precio": 345.67
+  },
+  {
+    "id": 4,
+    "timestamp": "10/08/2022 3:53:28 PM",
+    "nombre": "Mesa",
+    "codigo": "aa234",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/globe-earth-geograhy-planet-school-256.png",
+    "precio": 345.67
+  },
+  {
+    "id": 5,
+    "timestamp": "10/08/2022 3:53:36 PM",
+    "nombre": "Mesa",
+    "codigo": "aa234",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/globe-earth-geograhy-planet-school-256.png",
+    "precio": 345.67
+  }
+]

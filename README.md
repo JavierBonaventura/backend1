@@ -23,6 +23,8 @@
 
 ## Proyecto_Final_1 -> index.js
 ### PRIMERA ENTREGA PROYECTO FINAL
+Se ejecuta con index.js
+Para setear al usuario como admin hacer post a la ruta /login
 
 
 
