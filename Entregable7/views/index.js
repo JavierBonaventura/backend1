@@ -1,73 +1,80 @@
 const socket = io();
 
-// Products form
+
 const $formAddProduct = document.querySelector('#form-add-product');
-const $listProducts = document.querySelector('#list-products');
 const $nameInput = document.querySelector('#name-product');
 const $priceInput = document.querySelector('#price-product');
 const $imgInput = document.querySelector('#img-product');
 const $tableProducts = document.querySelector('#table-products');
+const $noProducts = document.querySelector('#no-products');
 
 $formAddProduct.addEventListener('submit', e => {
 	e.preventDefault();
-	const newProduct = {
+	const product = {
 		name: $nameInput.value,
 		price: $priceInput.value,
 		img: $imgInput.value
 	};
-	socket.emit('newProduct', newProduct);
+	socket.emit('product', product);
 	e.target.reset();
-	location.href = '/';
 });
 
 const renderProducts = products => {
-	if (products.length > 0) $tableProducts.innerHTML = '';
-	products.forEach(product => {
-		$tableProducts.innerHTML += `
+	if (products.length > 0) {
+		$noProducts.style.display = 'none';
+		$tableProducts.innerHTML = '';
+		products.forEach(product => {
+			$tableProducts.innerHTML += `
 		<tr class="text-center">
 			<td class="align-middle">${product.name}</td>
 			<td class="align-middle">${product.price}</td>
 			<td class="align-middle">
-				<img src="${product.img}" alt="${product.name}" width="50">
+				<img src="${product.img}" alt="${product.name}" width="100px">
 			</td>
 		</tr>`;
-	});
+		});
+	} else {
+		$noProducts.style.display = 'block';
+	}
 }
 
 
+const $chatForm = document.querySelector('#chat-form');
+const $userEmail = document.querySelector('#user-email');
+const $chatMessage = document.querySelector('#chat-message');
+const $tableChat = document.querySelector('#table-chat');
+
+$chatForm.addEventListener('submit', e => {
+	e.preventDefault();
+	if ($userEmail.value == '') return alert('Ingresa tu email');
+	const message = {
+		email: $userEmail.value,
+		message: $chatMessage.value,
+		date: new Date().toLocaleString()
+	}
+	socket.emit('message', message);http://localhost:8080/
+	e.target.reset();
+});
+
+const renderChat = messages => {
+	if (messages.length > 0) {
+		$tableChat.innerHTML = '';
+		messages.forEach(message => {
+			$tableChat.innerHTML += `
+		<div>
+			<b class="text-primary">${message.email}</b>
+			[<span style="color: brown;">${message.date}</span>]
+			: <i class="text-success">${message.message}</i>
+		</div > `;
+		})
+		$chatMessage.focus();
+	}
+}
 
 socket.on('products', products => {
 	renderProducts(products);
 });
 
-
-
-function render(data) {
-	const html = data
-		.map((elemento) => {
-			return `<div>
-			<strong><em style="color:blue;">${elemento.author}</em></strong>
-            <em style="color:brown">${elemento.date}</em>    
-			<i><em style="color:green">${elemento.text}</em></i>
-				</div>
-        `;
-		})
-		.join(" ");
-	document.getElementById("mensajes").innerHTML = html;
-}
-
-function addMessage(e) {
-	const mensaje = {
-		author: document.getElementById("username").value,
-		text: document.getElementById("texto").value,
-		date: new Date
-		
-	};
-
-	socket.emit("new-message", mensaje);
-	return false;
-}
-
-socket.on("messages", (data) => {
-	render(data);
+socket.on('messages', messages => {
+	renderChat(messages);
 });

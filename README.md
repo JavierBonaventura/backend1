@@ -26,6 +26,13 @@
 Se ejecuta con index.js
 Para setear al usuario como admin hacer post a la ruta /login
 
+## Entregable 7 -> server.js
+### Integracion de BD MYSQL y SQLlite y Websockets
+Se ejecuta con server.js
+Antes crear una BD con nombre "nuestra_primera_db" y ejecutar:
+node createTableMessages.js
+node createTableProducts.js
+
 
 
 
