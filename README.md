@@ -33,6 +33,11 @@ Antes crear una BD con nombre "nuestra_primera_db" y ejecutar:
 node createTableMessages.js
 node createTableProducts.js
 
+## Entregable 8 -> CRUD_Mongo.txt
+### MONGO DB (CLI)
+Transacciones con mongo por CLI
+
+
 
 
 

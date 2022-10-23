@@ -1,0 +1,377 @@
+use ecommerce
+db.products.insertMany([{name: 'regla', description: 'descripcion de regla', code: 1001, pic: 'pic1', price: 120, stock: 100}, {name: 'lapiz', description: 'descripcion de lapiz', code: 1002, pic: 'pic2', price: 580, stock: 200}, {name: 'goma', description: 'descripcion de goma', code: 1003, pic: 'pic3', price: 900, stock: 300}, {name: 'hojas', description: 'descripcion de hoja', code: 1004, pic: 'pic4', price: 1280, stock: 400}, {name: 'silla', description: 'descripcion de silla', code: 1005, pic: 'pic5', price: 1700, stock: 500}, {name: 'mesa', description: 'descripcion de mesa', code: 1006, pic: 'pic6', price: 2300, stock: 600}, {name: 'libro', description: 'descripcion de libro', code: 1007, pic: 'pic7', price: 2860, stock: 700}, {name: 'cuaderno', description: 'desdb.products.find()cripcion de cuaderno', code: 1008, pic: 'pic8', price: 3350, stock: 800}, {name: 'mochila', description: 'descripcion de mochila', code: 1009, pic: 'pic9', price: 4320, stock: 900}, {name: 'cartuchera', description: 'descripcion de cartuchera', code: 1010, pic: 'pic10', price: 4990, stock: 101}])
+db.messages.insertMany([{email: 'usuario1@email.com', message: 'usuario1', date: 'date1'}, {email: 'usuario2@email.com', message: 'usuario2', date: 'date2'}, {email: 'usuario3@email.com', message: 'usuario3', date: 'date3'}, {email: 'usuario4@email.com', message: 'usuario4', date: 'date4'}, {email: 'usuario5@email.com', message: 'usuario5', date: 'date5'}, {email: 'usuario6@email.com', message: 'usuario6', date: 'date6'}, {email: 'usuario7@email.com', message: 'usuario7', date: 'date7'}, {email: 'usuario8@email.com', message: 'usuario8', date: 'date8'}, {email: 'usuario9@email.com', message: 'usuario9', date: 'date9'}, {email: 'usuario10@email.com', message: 'usuario10', date: 'date10'}])
+db.products.find()
+db.messages.find()
+db.products.estimatedDocumentCount()
+db.messages.estimatedDocumentCount()
+db.products.insertOne({name: 'fibra', description: 'descripcion de fibra', code: 1011, pic: 'pic11', price: 1100, stock: 1100})
+db.products.find({name: 'goma'})
+db.products.find({price: {$lt: 1000}})
+db.products.find({$and: [{price: {$gte: 1000}},{price: {$lte: 3000}}]})
+db.products.find({price: {$gte: 3000}})
+db.products.find().sort({price: 1}).limit(1).skip(2)
+db.products.updateMany({}, {$set: {stock: 100}}, {upsert: true})
+db.products.updateMany({price: {$gt: 4000}}, {$set: {stock: 0}})
+db.products.deleteMany({price: {$lt: 1000}})
+db.createUser({user: 'pepe', pwd: 'asd456', roles: [{role: 'read', db: 'ecommerce'}]})
+
+
+
+Ejecucion en mongo
+
+
+test> use ecommerce
+switched to db ecommerce
+ecommerce> db.products.insertMany([{name: 'regla', description: 'descripcion de ecommerce> db.products.insertMany([{name: 'regla', description: 'descripcion de ecommerce> db.products.insertMany([{name: 'regla', description: 'descripcion de ecommerce> db.products.insertMany([{name: 'regla', description: 'descripcion de regla', code: 1001, pic: 'pic1', price: 120, stock: 100}, {name: 'lapiz', description: 'descripcion de lapiz', code: 1002, pic: 'pic2', price: 580, stock: 200}, {name: 'goma', description: 'descripcion de goma', code: 1003, pic: 'pic3', price: 900, stock: 300}, {name: 'hojas', description: 'descripcion de hoja', code: 1004, pic: 'pic4', price: 1280, stock: 400}, {name: 'silla', description: 'descripcion de silla', code: 1005, pic: 'pic5', price: 1700, stock: 500}, {name: 'mesa', description: 'descripcion de mesa', code: 1006, pic: 'pic6', price: 2300, stock: 600}, {name: 'libro', description: 'descripcion de libro', code: 1007, pic: 'pic7', price: 2860, stock: 700}, {name: 'cuaderno', description: 'desdb.products.find()cripcion de cuaderno', code: 1008, pic: 'pic8', price: 3350, stock: 800}, {name: 'mochila', description: 'descripcion de mochila', code: 1009, pic: 'pic9', price: 4320, stock: 900}, {name: 'cartuchera', description: 'descripcion de cartuchera', code: 1010, pic: 'pic10', price: 4990, stock: 101}])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId("6355c44af6d487f7464e575e"),
+    '1': ObjectId("6355c44af6d487f7464e575f"),
+    '2': ObjectId("6355c44af6d487f7464e5760"),
+    '3': ObjectId("6355c44af6d487f7464e5761"),
+    '4': ObjectId("6355c44af6d487f7464e5762"),
+    '5': ObjectId("6355c44af6d487f7464e5763"),
+    '6': ObjectId("6355c44af6d487f7464e5764"),
+    '7': ObjectId("6355c44af6d487f7464e5765"),
+    '8': ObjectId("6355c44af6d487f7464e5766"),
+    '9': ObjectId("6355c44af6d487f7464e5767")
+  }
+}
+ecommerce> db.messages.insertMany([{email: 'usuario1@email.com', message: 'usuarecommerce> db.messages.insertMany([{email: 'usuario1@email.com', message: 'usuario1', date: 'date1'}, {email: 'usuario2@email.com', message: 'usuario2', date: 'date2'}, {email: 'usuario3@email.com', message: 'usuario3', date: 'date3'}, {email: 'usuario4@email.com', message: 'usuario4', date: 'date4'}, {email: 'usuario5@email.com', message: 'usuario5', date: 'date5'}, {email: 'usuario6@email.com', message: 'usuario6', date: 'date6'}, {email: 'usuario7@email.com', message: 'usuario7', date: 'date7'}, {email: 'usuario8@email.com', message: 'usuario8', date: 'date8'}, {email: 'usuario9@email.com', message: 'usuario9', date: 'date9'}, {eemail: 'usuario10@email.com', message: 'usuario10', date: 'date10'}])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId("6355c44ef6d487f7464e5768"),
+    '1': ObjectId("6355c44ef6d487f7464e5769"),
+    '2': ObjectId("6355c44ef6d487f7464e576a"),
+    '3': ObjectId("6355c44ef6d487f7464e576b"),
+    '4': ObjectId("6355c44ef6d487f7464e576c"),
+    '5': ObjectId("6355c44ef6d487f7464e576d"),
+    '6': ObjectId("6355c44ef6d487f7464e576e"),
+    '7': ObjectId("6355c44ef6d487f7464e576f"),
+    '8': ObjectId("6355c44ef6d487f7464e5770"),
+    '9': ObjectId("6355c44ef6d487f7464e5771")
+  }
+}
+ecommerce> db.products.find()
+[
+  {
+    _id: ObjectId("6355c44af6d487f7464e575e"),
+    name: 'regla',
+    description: 'descripcion de regla',
+    code: 1001,
+    pic: 'pic1',
+    price: 120,
+    stock: 100
+  },
+  {
+    _id: ObjectId("6355c44af6d487f7464e575f"),
+    name: 'lapiz',
+    description: 'descripcion de lapiz',
+    code: 1002,
+    pic: 'pic2',
+    price: 580,
+    stock: 200
+  },
+  {
+    _id: ObjectId("6355c44af6d487f7464e5760"),
+    name: 'goma',
+    description: 'descripcion de goma',
+    code: 1003,
+    pic: 'pic3',
+    price: 900,
+    stock: 300
+  },
+  {
+    _id: ObjectId("6355c44af6d487f7464e5761"),
+    name: 'hojas',
+    description: 'descripcion de hoja',
+    code: 1004,
+    pic: 'pic4',
+    price: 1280,
+    stock: 400
+  },
+  {
+    _id: ObjectId("6355c44af6d487f7464e5762"),
+    name: 'silla',
+    description: 'descripcion de silla',
+    code: 1005,
+    pic: 'pic5',
+    price: 1700,
+    stock: 500
+  },
+  {
+    _id: ObjectId("6355c44af6d487f7464e5763"),
+    name: 'mesa',
+    description: 'descripcion de mesa',
+    code: 1006,
+    pic: 'pic6',
+    price: 2300,
+    stock: 600
+  },
+  {
+    _id: ObjectId("6355c44af6d487f7464e5764"),
+    name: 'libro',
+    description: 'descripcion de libro',
+    code: 1007,
+    pic: 'pic7',
+    price: 2860,
+    stock: 700
+  },
+  {
+    _id: ObjectId("6355c44af6d487f7464e5765"),
+    name: 'cuaderno',
+    description: 'desdb.products.find()cripcion de cuaderno',
+    code: 1008,
+    pic: 'pic8',
+    price: 3350,
+    stock: 800
+  },
+  {
+    _id: ObjectId("6355c44af6d487f7464e5766"),
+    name: 'mochila',
+    description: 'descripcion de mochila',
+    code: 1009,
+    pic: 'pic9',
+    price: 4320,
+    stock: 900
+  },
+  {
+    _id: ObjectId("6355c44af6d487f7464e5767"),
+    name: 'cartuchera',
+    description: 'descripcion de cartuchera',
+    code: 1010,
+    pic: 'pic10',
+    price: 4990,
+    stock: 101
+  }
+]
+ecommerce> db.messages.find()
+[
+  {
+    _id: ObjectId("6355c44ef6d487f7464e5768"),
+    email: 'usuario1@email.com',
+    message: 'usuario1',
+    date: 'date1'
+  },
+  {
+    _id: ObjectId("6355c44ef6d487f7464e5769"),
+    email: 'usuario2@email.com',
+    message: 'usuario2',
+    date: 'date2'
+  },
+  {
+    _id: ObjectId("6355c44ef6d487f7464e576a"),
+    email: 'usuario3@email.com',
+    message: 'usuario3',
+    date: 'date3'
+  },
+  {
+    _id: ObjectId("6355c44ef6d487f7464e576b"),
+    email: 'usuario4@email.com',
+    message: 'usuario4',
+    date: 'date4'
+  },
+  {
+    _id: ObjectId("6355c44ef6d487f7464e576c"),
+    email: 'usuario5@email.com',
+    message: 'usuario5',
+    date: 'date5'
+  },
+  {
+    _id: ObjectId("6355c44ef6d487f7464e576d"),
+    email: 'usuario6@email.com',
+    message: 'usuario6',
+    date: 'date6'
+  },
+  {
+    _id: ObjectId("6355c44ef6d487f7464e576e"),
+    email: 'usuario7@email.com',
+    message: 'usuario7',
+    date: 'date7'
+  },
+  {
+    _id: ObjectId("6355c44ef6d487f7464e576f"),
+    email: 'usuario8@email.com',
+    message: 'usuario8',
+    date: 'date8'
+  },
+  {
+    _id: ObjectId("6355c44ef6d487f7464e5770"),
+    email: 'usuario9@email.com',
+    message: 'usuario9',
+    date: 'date9'
+  },
+  {
+    _id: ObjectId("6355c44ef6d487f7464e5771"),
+    email: 'usuario10@email.com',
+    message: 'usuario10',
+    date: 'date10'
+  }
+]
+ecommerce> db.products.estimatedDocumentCount()
+10
+ecommerce> db.messages.estimatedDocumentCount()
+10
+ecommerce> db.products.insertOne({name: 'fibra', description: 'descripcion de fibra', code: 1011, pic: 'pic11', price: 1100, stock: 1100})
+{
+  acknowledged: true,
+  insertedId: ObjectId("6355c45bf6d487f7464e5772")
+}
+ecommerce> db.products.find({name: 'goma'})
+[
+  {
+    _id: ObjectId("6355c44af6d487f7464e5760"),
+    name: 'goma',
+    description: 'descripcion de goma',
+    code: 1003,
+    pic: 'pic3',
+    price: 900,
+    stock: 300
+  }
+]
+ecommerce> db.products.find({price: {$lt: 1000}})
+[
+  {
+    _id: ObjectId("6355c44af6d487f7464e575e"),
+    name: 'regla',
+    description: 'descripcion de regla',
+    code: 1001,
+    pic: 'pic1',
+    price: 120,
+    stock: 100
+  },
+  {
+    _id: ObjectId("6355c44af6d487f7464e575f"),
+    name: 'lapiz',
+    description: 'descripcion de lapiz',
+    code: 1002,
+    pic: 'pic2',
+    price: 580,
+    stock: 200
+  },
+  {
+    _id: ObjectId("6355c44af6d487f7464e5760"),
+    name: 'goma',
+    description: 'descripcion de goma',
+    code: 1003,
+    pic: 'pic3',
+    price: 900,
+    stock: 300
+  }
+]
+ecommerce> db.products.find({$and: [{price: {$gte: 1000}},{price: {$lte: 3000}}]})
+[
+  {
+    _id: ObjectId("6355c44af6d487f7464e5761"),
+    name: 'hojas',
+    description: 'descripcion de hoja',
+    code: 1004,
+    pic: 'pic4',
+    price: 1280,
+    stock: 400
+  },
+  {
+    _id: ObjectId("6355c44af6d487f7464e5762"),
+    name: 'silla',
+    description: 'descripcion de silla',
+    code: 1005,
+    pic: 'pic5',
+    price: 1700,
+    stock: 500
+  },
+  {
+    _id: ObjectId("6355c44af6d487f7464e5763"),
+    name: 'mesa',
+    description: 'descripcion de mesa',
+    code: 1006,
+    pic: 'pic6',
+    price: 2300,
+    stock: 600
+  },
+  {
+    _id: ObjectId("6355c44af6d487f7464e5764"),
+    name: 'libro',
+    description: 'descripcion de libro',
+    code: 1007,
+    pic: 'pic7',
+    price: 2860,
+    stock: 700
+  },
+  {
+    _id: ObjectId("6355c45bf6d487f7464e5772"),
+    name: 'fibra',
+    description: 'descripcion de fibra',
+    code: 1011,
+    pic: 'pic11',
+    price: 1100,
+    stock: 1100
+  }
+]
+ecommerce> db.products.find({price: {$gte: 3000}})
+[
+  {
+    _id: ObjectId("6355c44af6d487f7464e5765"),
+    name: 'cuaderno',
+    description: 'desdb.products.find()cripcion de cuaderno',
+    code: 1008,
+    pic: 'pic8',
+    price: 3350,
+    stock: 800
+  },
+  {
+    _id: ObjectId("6355c44af6d487f7464e5766"),
+    name: 'mochila',
+    description: 'descripcion de mochila',
+    code: 1009,
+    pic: 'pic9',
+    price: 4320,
+    stock: 900
+  },
+  {
+    _id: ObjectId("6355c44af6d487f7464e5767"),
+    name: 'cartuchera',
+    description: 'descripcion de cartuchera',
+    code: 1010,
+    pic: 'pic10',
+    price: 4990,
+    stock: 101
+  }
+]
+ecommerce> db.products.find().sort({price: 1}).limit(1).skip(2)
+[
+  {
+    _id: ObjectId("6355c44af6d487f7464e5760"),
+    name: 'goma',
+    description: 'descripcion de goma',
+    code: 1003,
+    pic: 'pic3',
+    price: 900,
+    stock: 300
+  }
+]
+ecommerce> db.products.updateMany({}, {$set: {stock: 100}}, {upsert: true})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 11,
+  modifiedCount: 10,
+  upsertedCount: 0
+}
+ecommerce> db.products.updateMany({price: {$gt: 4000}}, {$set: {stock: 0}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 2,
+  modifiedCount: 2,
+  upsertedCount: 0
+}
+ecommerce> db.products.deleteMany({price: {$lt: 1000}})
+{ acknowledged: true, deletedCount: 3 }
+ecommerce> db.createUser({user: 'pepe', pwd: 'asd456', roles: [{role: 'read', dbdb: 'ecommerce'}]})
+MongoServerError: User "pepe@ecommerce" already exists
+ecommerce> 
+
+
