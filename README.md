@@ -37,6 +37,11 @@ node createTableProducts.js
 ### MONGO DB (CLI)
 Transacciones con mongo por CLI
 
+## Proyecto_Final_2 -> index.js
+### SEGUNDA ENTREGA PROYECTO FINAL
+Se ejecuta con index.js
+Para setear al usuario como admin "localhost:8080/api/productos/?admin=true"
+
 
 
 
