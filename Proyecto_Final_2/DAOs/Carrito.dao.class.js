@@ -6,7 +6,7 @@ import CarritoModel from '../models/CartModel.js'
 export default class Carrito {
 	constructor() {
 		this.url = "mongodb+srv://admin:admin@cluster0.imxi6sx.mongodb.net/?retryWrites=true&w=majority";
-		this.mongodb = mongoose.connect
+		this.mongodb = mongoose.connect	
 		this.producto = new Producto();	
 	}
 
@@ -24,8 +24,8 @@ export default class Carrito {
 
 	// Obtener carrito por ID
 	async listar(id) {
-		try{
-			await this.mongodb(this.ulr);
+		try{		
+			await this.mongodb(this.url);
 			return await CarritoModel.findById(id)	
 		}catch(error){
 			return {error: "No existen carritos"}
@@ -72,11 +72,14 @@ export default class Carrito {
 	}
 
 	// Agrega un producto específico en un carrito específico
-	async guardarProductoEnCarrito(idProd, idCarrito) {
+	async guardarProductoEnCarrito(idProd, idCarrito) {	
 		await this.mongodb(this.url);
 		const prod = await this.producto.getById(idProd);
-		const carr = new CarritoModel(idCarrito)
-		return await carr.findByIdAndUpdate(carr,{$push: prod});			
+		const carr = await CarritoModel.findById(idCarrito)
+		carr.productos.push(prod)
+		carr.save()
+		console.log(carr)
+		// return await carr.findByIdAndUpdate(carr,{$push: prod});		
 	}
 
 	// Actualiza el archivo de carrito

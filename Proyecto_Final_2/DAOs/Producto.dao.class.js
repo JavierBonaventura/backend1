@@ -10,12 +10,14 @@ export default class Producto {
 	// Crear Archivo con el producto
 	async createData(prod) {
 		try {
+			const timeStamp = Date.now();
 			await this.mongodb(this.url);
 			const newProduct = new ProductoModel(prod);
 			return await newProduct.save();
 		} catch (err) {
 			console.log(err)
 		}
+		return newProduct
 	}
 	// Obtener producto por Id
 	async getById(id) {
