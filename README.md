@@ -12,9 +12,6 @@
 ## Entregable 4 -> index.js
 ### SERVIDOR CON EXPRESS API RESTful
 
-## Entregable 4 -> index.js
-### SERVIDOR CON EXPRESS API RESTful
-
 ## Entregable 5 -> server.js
 ### PLANTILLAS PUG, HANDLEBARS Y EJS
 
@@ -26,14 +23,14 @@
 Se ejecuta con index.js
 Para setear al usuario como admin hacer post a la ruta /login
 
-## Entregable 7 -> server.js
+## Entregable 8 -> server.js
 ### Integracion de BD MYSQL y SQLlite y Websockets
 Se ejecuta con server.js
 Antes crear una BD con nombre "nuestra_primera_db" y ejecutar:
 node createTableMessages.js
 node createTableProducts.js
 
-## Entregable 8 -> CRUD_Mongo.txt
+## Entregable 9 -> CRUD_Mongo.txt
 ### MONGO DB (CLI)
 Transacciones con mongo por CLI
 
@@ -41,6 +38,14 @@ Transacciones con mongo por CLI
 ### SEGUNDA ENTREGA PROYECTO FINAL
 Se ejecuta con index.js
 Para setear al usuario como admin "localhost:8080/api/productos/?admin=true"
+
+## Entregable 11 -> src/app.js
+### Mocks y normalización
+Se ejecuta con src/app.js
+
+## Entregable 12 -> src/app.js
+### LOG-IN POR FORMULARIO
+Se ejecuta con src/app.js
 
 
 
