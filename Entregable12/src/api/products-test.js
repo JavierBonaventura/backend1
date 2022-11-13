@@ -30,6 +30,3 @@ productsTestRouter.get('/',webAuth,  (req, res) => {
 
 const productsFaker = { productsTestRouter, fakerProducts }
 export default productsFaker
-
-
-//------------------------------------------------------------------------

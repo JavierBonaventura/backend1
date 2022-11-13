@@ -1,43 +1,32 @@
-//---------cokie parser & session ---------------------
+
 import express from 'express'
 import cookieParser from 'cookie-parser';
 import session from 'express-session';
 import MongoStore from 'connect-mongo'
-/* ------------------------------------------------*/
-/*           Persistencia por MongoDB              */
-/* ------------------------------------------------*/
+
 const advancedOptions = { useNewUrlParser: true, useUnifiedTopology: true }
-/* ------------------------------------------------*/
-/*           Session Router                        */
-/* ------------------------------------------------*/
+
 const { Router } = express
 const sessionRouter = new Router()
 
 sessionRouter.use(cookieParser())
 sessionRouter.use(session({
-    /* ----------------------------------------------------- */
-    /*           Persistencia por redis database             */
-    /* ----------------------------------------------------- */
-    store: MongoStore.create({ 
-        //En Atlas connect App :  Make sure to change the node version to 2.2.12:
+
+    store: MongoStore.create({
         mongoUrl: 'mongodb://daniel:daniel123@cluster0-shard-00-00.nfdif.mongodb.net:27017,cluster0-shard-00-01.nfdif.mongodb.net:27017,cluster0-shard-00-02.nfdif.mongodb.net:27017/sesiones?ssl=true&replicaSet=atlas-bwvi2w-shard-0&authSource=admin&retryWrites=true&w=majority',
         mongoOptions: advancedOptions
     }),
-    /* ----------------------------------------------------- */
+
 
     secret: 'MySecret',
     resave: false,
-    saveUninitialized: false/* ,
-    rolling: true,
-    cookie: {
-        maxAge: 60000
-    } */
+    saveUninitialized: false
 }))
 
-const getNameSession = req => req.session.name? req.session.name: ''
+const getNameSession = req => req.session.name ? req.session.name : ''
 
-sessionRouter.get('/', (req,res) => {
-    if(req.session.contador) {
+sessionRouter.get('/', (req, res) => {
+    if (req.session.contador) {
         req.session.contador++
         console.log(`${getNameSession(req)} visitaste la página ${req.session.contador} veces.`)
         res.redirect('/index')
@@ -51,7 +40,7 @@ sessionRouter.get('/', (req,res) => {
     }
 })
 
-sessionRouter.get('/logout', (req,res) => {
+sessionRouter.get('/logout', (req, res) => {
     const name = req.session?.name
     if (name) {
         req.session.destroy(err => {
@@ -66,38 +55,18 @@ sessionRouter.get('/logout', (req,res) => {
     }
 })
 
-sessionRouter.get('/login', (req,res) => {
+sessionRouter.get('/login', (req, res) => {
     const name = req.session?.name
     if (name) {
-        //si existe la session enviamos a index
+
         res.redirect('/index')
     } else {
-        //Redirigimos a la página de login
+
         res.render('./login')
     }
 })
 
-sessionRouter.get('/info', (req,res) => {
-    console.log('------------ req.session -------------')
-    console.log(req.session)
-    console.log('--------------------------------------')
-
-    console.log('----------- req.sessionID ------------')
-    console.log(req.sessionID)
-    console.log('--------------------------------------')
-
-    console.log('----------- req.cookies ------------')
-    console.log(req.cookies)
-    console.log('--------------------------------------')
-
-    console.log('---------- req.sessionStore ----------')
-    console.log(req.sessionStore)
-    console.log('--------------------------------------')
-
-    console.log('---------- req.session.name ----------')
-    console.log(req.session?.name)
-    console.log('--------------------------------------')
-
+sessionRouter.get('/info', (req, res) => {
     res.send('Send info ok!')
 })
 

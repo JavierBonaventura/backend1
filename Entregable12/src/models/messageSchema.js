@@ -1,4 +1,4 @@
-//schema message json mongoose
+
 import mongoose from 'mongoose';
 const SchemaMongoose = mongoose.Schema;
 const userSchemaMongoose = new SchemaMongoose({  
@@ -11,7 +11,7 @@ const messageSchemaMongoose = new SchemaMongoose({
     date: { type: Date, default: Date.now }
 });
 
-//schemas author y message normalizr
+
 import normalizr from 'normalizr';
 const { schema } = normalizr;
 const userSchemaNormalizr = new schema.Entity('users', {}, { idAttribute: 'email' });
