@@ -54,7 +54,10 @@ Se ejecuta con src/app.js
 
 ## Entregable 14 -> src/app.js
 ### USANDO EL OBJETO PROCESS
-Se ejecuta con src/app.js
+Se ejecuta con npm run start
+rutas: 
+http://localhost:8080/random/(un numero cualquiera)
+http://localhost:8080/info
 
 
 

@@ -48,7 +48,7 @@ passport.use(
 	"login",
 	new localStrategy((username, password, done) => {
 		mongoose.connect(
-			`mongodb+srv://admin:admin@cluster0.imxi6sx.mongodb.net/?retryWrites=true&w=majority`
+			process.env.MONGODBURL
 		);
 		try {
 			UserModels.findOne(
