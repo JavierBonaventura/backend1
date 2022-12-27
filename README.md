@@ -52,12 +52,30 @@ Se ejecuta con src/app.js
 ### INICIO DE SESION
 Se ejecuta con src/app.js
 
-## Entregable 14 -> src/app.js
+## Entregable 14 -> src/server.js
 ### USANDO EL OBJETO PROCESS
 Se ejecuta con npm run start
 rutas: 
 http://localhost:8080/random/(un numero cualquiera)
 http://localhost:8080/info
 
+## Entregable 15 -> src/server.js
+Se ejecuta con npm run start
 
+comandos utilizados para métodos fork y cluster
+pm2 start src/server.js --name="cluster" --watch -i 0 -- 8081
+pm2 start src/server.js --name="fork1" --watch -- 8082
+pm2 start src/server.js --name="fork2" --watch -- 8083
+pm2 start src/server.js --name="fork3" --watch -- 8084
+pm2 start src/server.js --name="fork4" --watch -- 8085
+
+## Entregable 16 -> src/app.js
+### LOGUEO
+Comadnos para las consignas del entregable:
+1) Se ejecuta node src/server.js
+2) node --prof src/server.js 
+3) artillery quick -c 50 -n 20 "http://localhost:8080/api/info"> artyllery-suma.log
+4) node --prof-process info-v8.log > info.log.txt
+5) npm start
+6) npm run test
 
