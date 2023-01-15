@@ -1,0 +1,141 @@
+{"level":"info","message":"Ruta '/home' - con metodo: GET - time: 1/15/2023, 12:06:23 PM"}
+{"level":"info","message":"Ruta '/login' - con metodo: GET - time: 1/15/2023, 12:06:23 PM"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"info","message":"Ruta '/register' - con metodo: GET - time: 1/15/2023, 12:06:29 PM"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"info","message":"Ruta '/register' - con metodo: POST - time: 1/15/2023, 12:06:37 PM"}
+{"level":"info","message":"Ruta '/login' - con metodo: GET - time: 1/15/2023, 12:06:37 PM"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"info","message":"Ruta '/login' - con metodo: POST - time: 1/15/2023, 12:06:39 PM"}
+{"level":"info","message":"Ruta '/datos' - con metodo: GET - time: 1/15/2023, 12:06:39 PM"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"info","message":"Ruta '/home' - con metodo: GET - time: 1/15/2023, 3:43:19 PM"}
+{"level":"info","message":"Ruta '/login' - con metodo: GET - time: 1/15/2023, 3:43:19 PM"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrvxvK con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrvzN5 con método GET no implementada"}
+{"level":"info","message":"Ruta '/home' - con metodo: GET - time: 1/15/2023, 3:49:13 PM"}
+{"level":"info","message":"Ruta '/login' - con metodo: GET - time: 1/15/2023, 3:49:13 PM"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrv-sE con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrw0Im con método GET no implementada"}
+{"level":"info","message":"Ruta '/login' - con metodo: POST - time: 1/15/2023, 3:49:21 PM"}
+{"level":"info","message":"Ruta '/datos' - con metodo: GET - time: 1/15/2023, 3:49:21 PM"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"info","message":"Ruta '/api/productos' - con metodo: POST - time: 1/15/2023, 3:49:25 PM"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrw1mM con método GET no implementada"}
+{"level":"info","message":"Ruta '/api/productos' - con metodo: POST - time: 1/15/2023, 3:49:28 PM"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrw3E5 con método GET no implementada"}
+{"level":"info","message":"Ruta '/datos' - con metodo: GET - time: 1/15/2023, 3:49:32 PM"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrw4hs con método GET no implementada"}
+{"level":"info","message":"Ruta '/logout' - con metodo: GET - time: 1/15/2023, 3:49:39 PM"}
+{"level":"info","message":"Ruta '/home' - con metodo: GET - time: 1/15/2023, 3:49:39 PM"}
+{"level":"info","message":"Ruta '/login' - con metodo: GET - time: 1/15/2023, 3:49:39 PM"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrw69a con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrw7dK con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrw958 con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwAYq con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwC0b con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwDUK con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwEyE con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwGPr con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwHtb con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwJLK con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwKp4 con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwMGq con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwNkb con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwPCK con método GET no implementada"}
+{"level":"info","message":"Ruta '/login' - con metodo: POST - time: 1/15/2023, 3:51:03 PM"}
+{"level":"info","message":"Ruta '/datos' - con metodo: GET - time: 1/15/2023, 3:51:03 PM"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwQg5 con método GET no implementada"}
+{"level":"info","message":"Ruta '/datos' - con metodo: GET - time: 1/15/2023, 3:51:10 PM"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta / con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwS7q con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwTbd con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwV3L con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwWX5 con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwX-q con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwZSb con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwawK con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwcO5 con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwdrq con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwfJb con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwgnK con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwiFE con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwjir con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwlAa con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwmeK con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwo64 con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwpZq con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwr1b con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwsVK con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwtz4 con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwvQq con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwwuc con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwyML con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrwzq4 con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrw_Hr con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrx0la con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrx2DK con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrx3h5 con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrx58r con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrx6ca con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrx84K con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrx9Y5 con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrxA_q con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrxCTa con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrxDxL con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrxFP4 con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrxGsr con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrxIKa con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrxJoL con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrxLG5 con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrxMjr con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrxOBa con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrxPfL con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrxR74 con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrxSaq con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrxU2a con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrxVWK con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrxW-4 con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrxYRr con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrxZvb con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrxbNK con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrxcrM con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrxeIq con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrxfma con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrxhEL con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrxii5 con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrxk9q con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrxlda con método GET no implementada"}
+{"level":"warn","message":"Ruta /?EIO=4&transport=polling&t=OMrxn5K con método GET no implementada"}

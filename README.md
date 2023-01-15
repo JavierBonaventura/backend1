@@ -80,10 +80,12 @@ Comadnos para las consignas del entregable:
 6) npm run test
 
 ## Entregable 17 -> src/app.js
-### 
+### Desplegar nuestro proyecto en la nube
 
 ## Proyecto_Final_3 -> app.js
 ### TERCERA ENTREGA PROYECTO FINAL
 Iniciar proyecto con "node -r dotenv/config cluster.js 8080 cluster
 
-
+## Entregable 19 -> src/server.js
+### Dividir en capas nuestro proyecto
+Iniciar proyecto con node server.js
