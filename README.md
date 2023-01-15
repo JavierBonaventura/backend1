@@ -84,6 +84,6 @@ Comadnos para las consignas del entregable:
 
 ## Proyecto_Final_3 -> app.js
 ### TERCERA ENTREGA PROYECTO FINAL
-
+Iniciar proyecto con "node -r dotenv/config cluster.js 8080 cluster
 
 
