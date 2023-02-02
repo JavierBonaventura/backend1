@@ -89,3 +89,11 @@ Iniciar proyecto con "node -r dotenv/config cluster.js 8080 cluster
 ## Entregable 19 -> src/server.js
 ### Dividir en capas nuestro proyecto
 Iniciar proyecto con node server.js
+
+## Entregable 20 -> src/server.js
+### Mejorar la arquitectura de nuestra API
+Iniciar proyecto con node server.js
+
+## Entregable 21 -> src/server.js
+### Testeamos nuestra API
+Iniciar proyecto con node server.js
